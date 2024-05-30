@@ -1,0 +1,323 @@
+body {
+    background-color: white;
+    height: 800px;
+    margin-right:20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gilroy-Bold";
+    overflow-x: hidden;
+}
+h1 {
+        display: inline;
+        color: black;
+}
+h2 {
+        display:flex;
+        color: black;
+}
+
+main{
+    margin-left: -10px;
+    margin-right: -15px;
+    padding-left: 10px;
+}
+.txtn
+{
+    color: black;
+    margin-left: 50px;
+    font-size: 28px;
+}
+.txtn1
+{
+    color: #0f580f;
+    margin-left: 100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/*parte de jos*/
+
+.contact-heading{
+    text-align: left;
+    padding-left: 60px;
+    color:black;
+    font-size:24px;
+}
+.right-text {
+    padding-left: 300px;
+    color: black;
+    font-size:24px;
+    text-decoration: none;
+    transition: padding-left 0.3s ease;
+    margin-right:10px;
+}
+@media (max-width: 1200px) {
+    .right-text {
+    padding-left: 250px;
+    font-size:24px;
+    margin-right:10px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 50px;
+    color:black;
+    font-size:24px;
+}
+}
+@media (max-width: 1145px) {
+    .right-text {
+    padding-left: 100px;
+    transition: padding-left 0.3s ease;
+    font-size:24px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 40px;
+    color:black;
+    font-size:24px;
+}
+}
+@media (max-width: 1000px) {
+    .right-text {
+    padding-left: 50px;
+    transition: padding-left 0.3s ease;
+    font-size:20px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 30px;
+    color:black;
+    font-size:20px;
+}
+.email-text, .phone-text {
+    color: blue;
+    font-size:20px;
+}
+
+.envelope-icon, .phone-icon {
+    font-size: 14px;
+    margin-right: 5px;
+    color: black;
+}
+}
+footer {
+    font-family: "Gilroy-Bold";
+    background:#ffd555;
+    height: 80px;
+    padding-top:20px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left:-10px;
+    margin-right:-10px;
+    padding-right:2px;
+    display: flex;
+    position:absolute;
+    width:100%;
+
+}
+.envelope-icon
+{
+    padding-top:4px;
+    color:white;
+}
+.envelope-icon, .phone-icon {
+    font-size: 1.0em;
+    margin-right: 5px;
+    color: black;
+}
+
+.email-text, .phone-text {
+    color: blue;
+    text-decoration: none;
+}
+
+/*parte de sus*/
+
+.navbar{    
+    background: #ffd555;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:1000;
+}
+
+.fa-search{
+    text-decoration: none;
+}
+
+.titlu{
+    text-decoration: none;
+    position:fixed;
+    height:80px;
+    width:auto;
+    margin-top:-15px;
+    display:inline;
+}
+
+.fa-question-circle{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 325px;
+    top: 20px;
+    font-size: 22px;
+}
+
+.icon-heart {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 330px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.icon-user {
+
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 290px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.add-offer {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    top: 19px;
+    right: 250px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.icon-user:hover,
+.fa-question-circle:hover
+{
+        color: #0f580f;
+        transform: scale(1.2);
+}
+.right-text:hover{
+    color:#0f580f;;
+}
+.oferta:hover{
+    color: #0f580f;
+    transform: scale(1.1);
+    padding-left:10px;
+}
+.add-offer:hover{
+    background-color:#0f580f;
+    transform: scale(1.1);
+}
+
+.oferta{
+
+    position: fixed;
+    top:18px;
+    right:30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+ }
+.top-search-container {
+    display: flex;
+    margin-top: 2px;
+    margin-left: 520px;
+}
+
+.top-search-input {
+    padding: 8px;
+    width: 250px;
+    margin: 0;
+    border: 3px solid #686767;
+    border-radius: 10px 0 0 10px;
+
+}   
+
+.top-search-button {
+    padding: 5px;
+    color: rgb(16, 15, 15);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    margin:none;
+
+}
+
+.top-search-button i {
+    margin-right: 5px;
+}
+
+.top-search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.top-search-container2 {
+    display: flex;
+    margin-top: -36px;
+    margin-left: 180px;
+}
+
+.top-search-input2 {
+    padding: 8px;
+    width: 250px;
+    margin: 0;
+    border: 3px solid #686767;
+    border-radius: 10px 0 0 10px;
+}
+
+.top-search-button2 {
+    padding: 5px;
+    color: rgb(16, 15, 15);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    margin: none;
+}
+
+.top-search-button2 i {
+    margin-right: 5px;
+}
+
+.top-search-input2:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.logo{
+     position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-30%);
+  z-index:100;
+
+}
+.logoimg{
+  width:500px;
+  height:auto;
+  z-index:100;
+}
+
+li{
+    font-size: 26px;
+    color: black;
+    margin-bottom: 20px;
+}

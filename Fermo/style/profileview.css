@@ -1,0 +1,428 @@
+h1 {
+    display: inline;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Set a plain background for the body */
+    overflow-x: hidden;
+}
+main{
+    background-image: url("../imagini/joshua-reddekopp-7Oq9r2CiTLg-unsplash.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1400px;
+     margin: 0 auto;
+}
+header {
+    position: fixed;
+    z-index: 1000;
+}
+
+/*parte de jos*/
+
+.contact-heading{
+    text-align: left;
+    padding-left: 60px;
+    color:black;
+    font-size:24px;
+}
+.right-text {
+    padding-left: 300px;
+    color: black;
+    font-size:24px;
+    text-decoration: none;
+    transition: padding-left 0.3s ease;
+    margin-right:10px;
+}
+@media (max-width: 1200px) {
+    .right-text {
+    padding-left: 250px;
+    font-size:24px;
+    margin-right:10px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 50px;
+    color:black;
+    font-size:24px;
+}
+}
+@media (max-width: 1145px) {
+    .right-text {
+    padding-left: 100px;
+    transition: padding-left 0.3s ease;
+    font-size:24px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 40px;
+    color:black;
+    font-size:24px;
+}
+}
+@media (max-width: 1000px) {
+    .right-text {
+    padding-left: 50px;
+    transition: padding-left 0.3s ease;
+    font-size:20px;
+    }
+    .contact-heading{
+    text-align: left;
+    padding-left: 30px;
+    color:black;
+    font-size:20px;
+}
+.email-text, .phone-text {
+    color: blue;
+    font-size:20px;
+}
+
+.envelope-icon, .phone-icon {
+    font-size: 14px;
+    margin-right: 5px;
+    color: black;
+}
+}
+footer {
+    font-family: "Gilroy-Bold";
+    background: #ffd555;
+    height: 80px;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    position: relative; 
+    margin-top: auto; 
+    box-sizing: border-box;
+}
+.envelope-icon
+{
+    padding-top:4px;
+    color:white;
+}
+.envelope-icon, .phone-icon {
+    font-size: 1.0em;
+    margin-right: 5px;
+    color: black;
+}
+
+.email-text, .phone-text {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/*parte de sus*/
+
+.navbar {
+    background: #ffd555;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fa-search {
+    text-decoration: none;
+}
+
+.titlu {
+     text-decoration: none;
+    position:fixed;
+    height:80px;
+    width:auto;
+    margin-top:-15px;
+    display:inline;
+}
+
+.fa-question-circle{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 325px;
+    top: 20px;
+    font-size: 22px;
+}
+
+.icon-heart {
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 330px;
+    top: 20px;
+    font-size: 20px;
+}
+
+.icon-user {
+
+    color: black;
+    text-decoration: none;
+    text-align: right;
+    position: fixed;
+    right: 290px;
+    top: 20px;
+    font-size: 20px;
+}
+
+
+.add-offer {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    top: 19px;
+    right: 250px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+.icon-user:hover,
+.fa-question-circle:hover
+{
+        color: #0f580f;
+        transform: scale(1.2);
+}
+.right-text:hover{
+    color:#0f580f;;
+}
+.oferta:hover{
+    color: #0f580f;
+    transform: scale(1.1);
+    padding-left:10px;
+}
+.add-offer:hover{
+    background-color:#0f580f;
+    transform: scale(1.1);
+}
+
+.oferta {
+
+    position: fixed;
+    top: 18px;
+    right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.top-search-container {
+    display: flex;
+    margin-top: 2px;
+    margin-left: 520px;
+}
+
+.top-search-input {
+    padding: 8px;
+    width: 272px;
+    margin: 0;
+    border: 3px solid #686767;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.top-search-button {
+    padding: 5px;
+    color: rgb(16, 15, 15);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    margin: none;
+
+}
+
+.top-search-button i {
+    margin-right: 5px;
+}
+
+.top-search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.top-search-container2 {
+    display: flex;
+    margin-top: -52px;
+    margin-left: 180px;
+}
+
+.top-search-input2 {
+    padding: 8px;
+    width: 272px;
+    margin: 0;
+    border: 3px solid #686767;
+    border-radius: 10px 0 0 10px;
+}
+
+.top-search-button2 {
+    padding: 5px;
+    color: rgb(16, 15, 15);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    margin: none;
+
+}
+
+.top-search-button2 i {
+    margin-right: 5px;
+}
+
+.top-search-input2:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.search-icon {
+    padding: 10px;
+    color: rgb(5, 5, 5);
+    border-radius: 5px 0 0 5px;
+}
+
+
+.search-icon {
+    padding: 10px;
+    color: rgb(5, 5, 5);
+    border-radius: 5px 0 0 5px;
+}
+
+/* profile */
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #ffd555;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+.sus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+.welcome {
+    flex-grow: 1;
+    width: 20%; 
+    flex-wrap: wrap; 
+}
+
+.iconu {
+    margin-bottom: 10px;
+    margin-left:5%;
+}
+.user-icon {
+    font-size: 100px;
+    margin: 20px 0;
+}
+.contact-info {
+    flex-grow: 1;
+}
+
+.cont-titlu {
+    font-size: 24px;
+    margin-left:40%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.txtcc{
+    margin-top:10px;
+}
+.txtcF{
+    margin-top:10px;
+}
+.contactes {
+    display: flex;
+    margin-left:20%;
+    justify-content: space-between;
+}
+
+.contactee1, .contactee2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactee1{
+    margin-left:10%;
+}
+.additional-info {
+    margin-top: 5px;
+}
+
+.mijloc {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.despre {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.descriere {
+    font-size: 20px;
+    
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.jos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.oferte {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    background: #000000;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.oferte:hover {
+    background-color:#0f580f;
+}
