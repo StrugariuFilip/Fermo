@@ -35,32 +35,6 @@ CREATE TABLE `messages` (
   `datames` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
---
--- Eliminarea datelor din tabel `messages`
---
-
-INSERT INTO `messages` (`msg_id`, `incoming_msg_id`, `outgoing_msg_id`, `msg`, `datames`) VALUES
-(1, 56, 48, 'salut', '2024-07-07 19:45:03'),
-(2, 16, 48, 'ce faci?', '2024-07-07 19:45:25'),
-(3, 48, 16, 'Bine tu?', '2024-07-07 20:02:08'),
-(4, 48, 48, 'salut', '2024-07-08 17:38:50'),
-(5, 14, 48, 'salut', '2024-07-08 18:05:29'),
-(6, 15, 16, 'salut', '2024-07-08 21:21:29'),
-(7, 16, 15, 'salut', '2024-07-08 21:27:19'),
-(8, 15, 16, 'da', '2024-07-08 21:37:15'),
-(9, 15, 16, 'da', '2024-07-08 21:38:37'),
-(10, 15, 16, 'cat ti-a luat?', '2024-07-08 22:26:00'),
-(11, 16, 48, 'Esti online))?', '2024-07-08 22:28:10'),
-(12, 16, 15, 'Destul de mult:))', '2024-07-08 22:30:36'),
-(88, 15, 16, 'mergee', '2024-07-09 20:45:29'),
-(87, 15, 16, 'salut', '2024-07-09 20:43:19'),
-(85, 15, 16, 'sss', '2024-07-09 20:12:28'),
-(84, 14, 16, 'salut', '2024-07-09 20:11:40'),
-(86, 14, 16, 'ddd', '2024-07-09 20:17:42');
-
---
--- Indexuri pentru tabele eliminate
---
 
 --
 -- Indexuri pentru tabele `messages`
