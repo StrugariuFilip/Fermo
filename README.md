@@ -18,3 +18,7 @@ Pentru a asigura securitatea datelor, am achiziționat un certificat SSL pentru 
 📋 Cerințe de sistem
 🌐 Browser web modern
 🌐 Conexiune 
+
+
+SURSE EXTERNE FOLOSITE:
+Php Mailer-Master library
