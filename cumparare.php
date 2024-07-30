@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $imgData = null;
     if (isset($_FILES["productImage"]) && $_FILES["productImage"]["error"] == UPLOAD_ERR_OK) {
         $imagine = $_FILES["productImage"]["tmp_name"];
-        $imgData = file_get_contents($imagine); // Read binary data
+        $imgData = file_get_contents($imagine);
     }
 
     if ($stmt = $con2->prepare("INSERT INTO oferte (name, categorie, judet, address, imagine, pret, cantitate, nume_utilizator, descriere, data, email, number) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
