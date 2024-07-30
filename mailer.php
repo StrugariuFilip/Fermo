@@ -17,7 +17,7 @@ $mail->Host = "server39.web-hosting.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 $mail->Username = "NO-REPLY@fermo.shop";
-$mail->Password = "Fermopass2006";
+$mail->Password = "";
 
 
 $mail->isHTML(true);
