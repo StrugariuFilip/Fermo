@@ -9,7 +9,6 @@ if (!isset($_GET["token"])) {
 $token = $_GET["token"];
 $token_hash = hash("sha256", $token);
 
-// Prepare the select statement
 $query = "SELECT id, reset_token_expires_at FROM form WHERE reset_token_hash = ?";
 $stmt = $con->prepare($query);
 $stmt->bind_param("s", $token_hash);
@@ -51,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($ok == 1) {
         $hashed_password = password_hash($pass1, PASSWORD_DEFAULT);
 
-        // Prepare the update statement
         $update_query = "UPDATE form SET pass = ?, reset_token_hash = NULL, reset_token_expires_at = NULL WHERE id = ?";
         $update_stmt = $con->prepare($update_query);
         $update_stmt->bind_param("si", $hashed_password, $id);
