@@ -22,3 +22,4 @@ Pentru a asigura securitatea datelor, am achiziționat un certificat SSL pentru 
 
 SURSE EXTERNE FOLOSITE:
 Php Mailer-Master library
+Pentru aplicatia chat am folosit un chat prebuild , modificand-ul complet codul si rectificand lucruri la design.
