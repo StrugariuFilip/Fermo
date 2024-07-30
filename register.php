@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $gmail = $_POST["email"];
     $num = $_POST["number"];
 
-    // Validate password
     if (strlen($password) < 8) {
         $errors['password'] = 'Parola trebuie să aibă minim 8 caractere.';
         $ok = false;
@@ -27,42 +26,38 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $ok = false;
     }
 
-    // Check for existing records
     if ($ok) {
         // Check email
         $stmt = $con->prepare("SELECT * FROM form WHERE email=?");
         $stmt->bind_param("s", $gmail);
         $stmt->execute();
-        $stmt->store_result(); // Store the result for row count checking
+        $stmt->store_result(); 
         if ($stmt->num_rows > 0) {
             $errors['email'] = 'Email-ul este deja utilizat.';
             $ok = false;
         }
         $stmt->close();
 
-        // Check number
         $stmt = $con->prepare("SELECT * FROM form WHERE number=?");
         $stmt->bind_param("s", $num);
         $stmt->execute();
-        $stmt->store_result(); // Store the result for row count checking
+        $stmt->store_result();
         if ($stmt->num_rows > 0) {
             $errors['number'] = 'Numărul de telefon este deja utilizat.';
             $ok = false;
         }
         $stmt->close();
 
-        // Check username
         $stmt = $con->prepare("SELECT * FROM form WHERE name=?");
         $stmt->bind_param("s", $user_name);
         $stmt->execute();
-        $stmt->store_result(); // Store the result for row count checking
+        $stmt->store_result(); 
         if ($stmt->num_rows > 0) {
             $errors['username'] = 'Numele de utilizator este deja utilizat.';
             $ok = false;
         }
         $stmt->close();
 
-        // If all checks are passed
         if ($ok) {
             $hashed_password = password_hash($password, PASSWORD_DEFAULT);
             date_default_timezone_set("Europe/Bucharest");
